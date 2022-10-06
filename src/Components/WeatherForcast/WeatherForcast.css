@@ -1,0 +1,72 @@
+.WeatherForcast {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.timing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  /* margin: 0 20px; */
+  gap: 2rem;
+}
+.HorizontalScroll {
+  width: 100%;
+}
+img {
+  width: 4rem;
+}
+.group {
+  display: flex;
+  align-items: center;
+}
+p {
+  font-size: 0.75rem;
+}
+h1{
+  margin : 0;
+}
+.separator {
+  background: white;
+  width: 1px;
+  height: 12rem;
+  opacity: 0.2;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10rem;
+  margin: 0 1.5rem;
+  /* border: 1px solid rgba(255, 255, 255, 1); */
+}
+.btn {
+  padding: 0.7rem 2rem;
+  margin-top: 1.5rem;
+  background-color: var(--bg-blue);
+  border-radius: 2rem;
+  border: none;
+  color: #fff;
+  transition-duration: 500ms;
+}
+.btn:hover {
+  filter: drop-shadow(0 5px 20px var(--bg-blue));
+}
+@media only screen and (max-width: 1024px){
+  .WeatherForcast{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+  }
+  .timing{
+    width: 100%;
+  }
+  .HorizontalScrollTrack{
+    display: none !important;
+  }
+}

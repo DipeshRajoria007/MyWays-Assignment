@@ -1,0 +1,11 @@
+.header-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p{
+    margin:0;
+}
+.header-weather{
+    width : 4rem;
+}
